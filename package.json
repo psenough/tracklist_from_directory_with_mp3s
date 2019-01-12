@@ -1,0 +1,16 @@
+{
+  "name": "tracklist_from_directory_with_mp3s",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Filipe Cruz <psenough@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.1",
+    "mp3-duration": "^1.1.0",
+    "node-id3": "^0.1.7"
+  }
+}
