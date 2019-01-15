@@ -28,8 +28,9 @@ fs.readdir(directory, (err, files) => {
 				let thesetags = tags;
 				mp3Duration(directory + val, function (err, duration) {
 				  if (err) return console.log(err.message);
+				  //console.log(tags);
 				  //console.log('Your file is ' + duration + ' seconds long');
-				  if (thesetags != undefined) obj.push({"trackNumber": thesetags.trackNumber, "duration": duration, "artist": thesetags.artist, "title": thesetags.title});
+				  if (thesetags != undefined) obj.push({"trackNumber": (thesetags.trackNumber.split("/"))[0], "duration": duration, "artist": thesetags.artist, "title": thesetags.title});
 				  checkEnd();
 				  callback();
 				});
