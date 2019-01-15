@@ -3,7 +3,11 @@ const fs = require('fs');
 const async = require("async");
 const mp3Duration = require('mp3-duration');
 
-const directory = "C:/Users/Filipe Cruz/Videos/enrmp403_grid_resistor_-_alpha/";
+let directory = "C:/Users/Filipe Cruz/Videos/enrmp403_grid_resistor_-_alpha/";
+
+if (process.argv.length > 2) directory = process.argv[2];
+
+console.log('checking ' + directory);
 
 let obj = [];
 let counter = 0;
